@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <!-- fontawesome css: https://fontawesome.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../main.css">
+    <title>0717실습-me</title>
+    <style>
+        header {
+            background: rgba(0,0,0,0.1);
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+        }
+        header .header {
+            width: 85%;
+            margin: 0 auto;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #fff;
+            flex-direction: row;
+        }
+        header .header .logo {
+            float:left;
+            width: 200px;
+        }
+        header .header .logo img {
+            width: 100%;
+        }
+        header .header .mnb1 {
+            margin-left: 80px;
+        }
+        header .header .mnb1 li {
+            margin-left: 80px;
+        }
+        header .header .mnb1 li a {
+            display: block;
+        }
+        header .header .mnb2 {
+            float: right;
+        }
+        header .header .mnb2 li {
+            margin-right: 30px;
+        }
+        header .header .mnb2 li:first-child i,
+        header .header .mnb2 li:nth-child(2) i {
+            margin: 10px;
+            font-size: 20px;
+        }
+        header .header .mnb2 li:last-child a {
+            border: 1px solid #fff;
+            border-radius: 30px;
+            padding: 5px 15px;
+        }
+        header .header .mnb2 li:last-child a:hover{
+            background: #fff;
+            color: #ff8342;
+        }
+
+        header .header .mnb2 li:last-child i {
+            margin-left: 5px;
+        }
+
+        header .header div li {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="../../logo1.png" alt="메인로고">
+                </a>
+            </h1>
+            <div class="mnb1">
+                <ul>
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">사업영역</a>
+                    </li>
+                    <li>
+                        <a href="#">투자정보</a>
+                    </li>
+                    <li>
+                        <a href="#">인재채용</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mnb2">
+                <ul>
+                    <li><a href="#"><i class="fas fa-flask"></i>알기쉬운 제품공정</a></li>
+                    <li><a href="#"><i class="far fa-handshake"></i>내 삶속의 회사</a></li>
+                    <li><a href="#">제품검색<i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>       
+</body>
+</html>
