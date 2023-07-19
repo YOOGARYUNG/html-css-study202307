@@ -2,11 +2,30 @@
 @import url(/include.css);
 
 #product-overview {
-  background: url('lesserafim1.jpg')
-     no-repeat center / cover;
-  height: calc(100vh - 97px);
+    background: url(/lesserafim1.jpg) no-repeat center / cover;
+    height:calc(100vh - 97px);
+    display: flex;
+    justify-content: center;
 }
 
+#product-overview h2 {
+    font-size: 58px;
+    font-weight: 700;
+    margin-top: 750px;
+    color: #ffecae;
+    text-shadow: 2px 2px 15px rgba(0,0,0, 0.95);
+    
+
+    animation: drop 2s linear;
+}
+@keyframes drop {
+    0% {
+        transform: rotate(0deg) translate(0, -1000px);
+    }
+    100%{
+        transform: rotate(360deg) translate(0, 0);
+    }
+}
 
 /* choose plan style */
 
@@ -113,7 +132,7 @@ section .section-title {
     font-size: 20px;
 }
 
-=======
+
 /* common style */
 * {
     box-sizing: border-box;
@@ -136,6 +155,8 @@ body {
     background: #000;
     color: #fff;
     padding: 30px 16px;
+    display: flex;
+    justify-content: center;
 }
 .main-header h1 {
 /* background: yellowgreen; */
@@ -184,8 +205,6 @@ flex: 3;
     background: #fff;
     margin-bottom: 5px;
 }
-#product-overview {
-    background: url(/lesserafim1.jpg) no-repeat center / cover;
-    height:calc(100vh - 97px);
-}
+
+
 
