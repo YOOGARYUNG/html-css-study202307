@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child</title>
+    <style>
+        #fruits li {
+            list-style: none;
+        }
+        #fruits li:first-child {
+            color: red;
+        }
+        #fruits li:last-child {
+            color: greenyellow;
+        }
+        #fruits li:nth-child(3) {
+            color: orange;
+        }
+        /* even = 2n */
+        #fruits li:nth-child(even) {
+            background: skyblue;
+        }
+        /* odd = 2n-1 */
+        #fruits li:nth-child(odd) {
+            background: tomato;
+        }
+        #fruits li:not(.orange) {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <ul id="fruits">
+        <li>딸기</li>
+        <li>블루베리</li>
+        <li>망고</li>
+        <li class="orange">오렌지</li>
+        <li>체리</li>
+        <li>사과</li>
+        <li>바나나</li>
+    </ul>
+</body>
+</html>
