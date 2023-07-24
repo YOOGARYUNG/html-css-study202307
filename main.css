@@ -1,5 +1,6 @@
 
 @import url(/include.css);
+@import url('main-tablet.css');
 
 #product-overview {
     background: url(/lesserafim1.jpg) no-repeat center / cover;
